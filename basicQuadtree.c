@@ -1,4 +1,3 @@
-
 #include "stdio.h"
 #include "stdlib.h"
 #include "math.h"
@@ -6,6 +5,7 @@
 // tree data structure
 
 struct qnode {
+  //int flag=0;
   int level;
   double xy[2];
   struct qnode *child[4];
@@ -122,3 +122,45 @@ void printOut( FILE *fp, Node *node ) {
 
   return;
 }
+/*
+void destroyTree(Node *head, Node *node) {
+	node=head;
+	while (node!=NULL){
+		for ( i=0; i<4; ++i ) {
+			if ( node->child[i]==NULL )
+				free(node)
+			else
+				destroyTree( node->child[i], node->child[i])
+    	}
+	}
+  	return;
+} 
+
+void removeChildren(Node *parent){
+	free(parent->child[0]);
+	free(parent->child[1]);
+	free(parent->child[2]);
+	free(parent->child[3]);
+	
+	parent->level =parent->level-1
+	
+	//parent->xy[0] =
+	//parent->xy[1] =
+	
+	parent->xy[0];
+    parent->xy[1];
+
+ // int level = parent->level;
+
+  	double hChild = pow(2.0,-(level+1));
+
+  	parent->child[0] = makeNode( x,y, level+1 );
+  	parent->child[1] = makeNode( x-hChild,y, level+1 );
+  	parent->child[2] = makeNode( x-hChild,y-hChild, level+1 );
+  	parent->child[3] = makeNode( x,y-hChild, level+1 );
+  	
+  	return;
+}
+*/
+
+
