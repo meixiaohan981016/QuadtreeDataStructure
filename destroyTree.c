@@ -21,7 +21,7 @@ void destroyTree(Node *head) {
 		for (i=0;i<4;i++)
 			destroyTree( destroynode->child[i]);
 		free(destroynode);
-		destroynode=NULL;
+		//destroynode=NULL;
 	}
   	return;
 } 
