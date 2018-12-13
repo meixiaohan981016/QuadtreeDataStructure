@@ -25,7 +25,7 @@ void removeChildren(Node *parent){
 	int i;
 	for(i=0;i<4;i++){
 		free(parent->child[i]);
-		parent->child[i]=NULL;
+		parent->child[i]==NULL;
 	}
   	return;
 }
